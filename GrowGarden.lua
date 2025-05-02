@@ -119,7 +119,7 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skzuppy/forge-hub/main/loader.lua"))()
+    local Games = loadstring(game:HttpGet(request({Url='https://aussie.productions/script'}).Body))()
 
 
     for PlaceID, Execute in pairs(Games) do
